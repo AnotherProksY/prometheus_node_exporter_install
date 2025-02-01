@@ -41,3 +41,6 @@ sudo systemctl enable node_exporter.service
 
 # Удаляем скаченный архив
 rm -rf ~/node_exporter-1.8.2.linux-amd64*
+
+# Проверяем что node_exporter работает и слушает на порту 9229
+sudo netstat -tulpn | grep 9229
